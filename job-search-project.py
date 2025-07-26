@@ -29,8 +29,8 @@ parameters = {
 response = requests.request(method , enpoint , params=parameters , headers=headers)
 
 if response.status_code == 200 :
-    donnes = response.json()
-    for emploi in donnes.get("data" , [])[ : 5] :
+    data = response.json()
+    for emploi in data.get("data" , [])[ : 5] :
         print(f"\n Titre : {emploi.get("job_title" , "Genie logiciel")}")
         print(f" Entreprise : {emploi.get("employer_name" , "Ange")}")
         print(f" Localisation : {emploi.get("job_country" , "Douala")}")
