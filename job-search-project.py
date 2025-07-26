@@ -1,3 +1,6 @@
+
+import requests
+
 pays = {
     "1" : "US" ,
     "2" : "Ca" ,
@@ -8,7 +11,6 @@ choisir = input("choisir un pays  (1 : US , 2 : Ca , 3 : ae) : ")
 
 poste = input("Entrer le poste que vous recherchez : ")
 
-import requests
 
 enpoint = "https://jsearch.p.rapidapi.com/search"
 api_key = "0e0506fd6amsh5db42442dfe9666p102ecdjsn851649d7ccb3"
